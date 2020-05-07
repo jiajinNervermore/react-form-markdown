@@ -11,3 +11,75 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.d1{
+  display: flex;
+  width: 200px;
+  flex-wrap: wrap;
+  border: 1px solid #999999;
+  margin: 0 auto;
+}
+.d1>.header{
+  width: 100%;height: 50px;
+  font-size: 26px;
+  line-height: 50px;
+  border-bottom: 1px solid #999999;
+  background-color: #fbfbfb;
+}
+.d1>span{
+  margin: 5px;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+.d1>span:hover{
+  margin: 5px;
+  font-size: 16px;
+  padding: 5px;
+  color:green;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+}
+.carousel{
+  position: relative;
+  border: 1px solid greenyellow;
+  margin: 0 auto;
+  width:500px;
+  height: 300px;
+}
+.carousel>.car-item>img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.left,.right{
+  position: absolute;
+  top:100px;
+  width:35px;
+  height:70px;
+  z-index: 10;
+}
+.left{
+  left:10px;
+}
+.right{
+  right:10px;
+}
+.yuandian{
+  position: absolute;
+  bottom: 10px;
+  width: 150px;
+  left:125px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.yuandian>li{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #999999;
+}
+.active{
+  background-color: lightseagreen;
+}
